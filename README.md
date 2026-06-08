@@ -21,6 +21,7 @@ MONTH()
 GROUP BY
 ORDER BY
 Analysis Performed
+
 Query 1: Total Revenue
 
 Calculated the overall revenue generated from all sales transactions.
@@ -50,10 +51,10 @@ Query 7: Yearly Revenue and Order Volume Trend
 Compared total revenue and order volume across different years to identify overall business growth.
 
 Key Findings
-The dataset generated a total revenue of 2,297,200.86.
-A total of 5,009 unique orders were recorded.
-The average sales value was 229.86.
-The highest sales transaction was 22,638.48.
-The lowest sales transaction was 0.44.
-Revenue and order volume showed an increasing trend over the years.
-The highest yearly revenue and order volume were recorded in 2017.
+-The dataset generated a total revenue of 2,297,200.86.
+-A total of 5,009 unique orders were recorded.
+-The average sales value was 229.86.
+-The highest sales transaction was 22,638.48.
+-The lowest sales transaction was 0.44.
+-Revenue and order volume showed an increasing trend over the years.
+-The highest yearly revenue and order volume were recorded in 2017.
