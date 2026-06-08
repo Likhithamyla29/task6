@@ -1,4 +1,4 @@
-Sales Trend Analysis Using Aggregations
+### Sales Trend Analysis Using Aggregations
 Objective
 
 The objective of this task is to analyze sales performance by calculating revenue and order volume trends using SQL aggregation functions. The analysis focuses on identifying monthly and yearly sales patterns from the online sales dataset.
@@ -20,6 +20,7 @@ YEAR()
 MONTH()
 GROUP BY
 ORDER BY
+
 Analysis Performed
 
 Query 1: Total Revenue
