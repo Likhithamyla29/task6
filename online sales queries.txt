@@ -1,0 +1,49 @@
+--Total Revenue
+SELECT
+    SUM(Sales) AS Total_Revenue
+FROM online_sales;
+
+-- Total number of Orders
+SELECT
+    COUNT(DISTINCT Order_ID) AS Total_Orders
+FROM online_sales;
+
+--Average of sales
+SELECT
+    ROUND(AVG(Sales),2) AS Average_Sales
+FROM online_sales;
+
+--highest and lowest sales
+SELECT
+    MAX(Sales) AS Highest_Sale,
+    MIN(Sales) AS Lowest_Sale
+FROM online_sales;
+
+--Monthly Revenue Trend for the year 2014
+SELECT
+    YEAR(Order_Date) AS Year,
+    MONTH(Order_Date) AS Month,
+    ROUND(SUM(Sales),2) AS Monthly_Revenue
+FROM online_sales
+WHERE YEAR(Order_Date) = 2014
+GROUP BY YEAR(Order_Date), MONTH(Order_Date)
+ORDER BY Year, Month;
+
+--Monthly Order Volume for the year 2016
+SELECT
+    YEAR(Order_Date) AS Year,
+    MONTH(Order_Date) AS Month,
+    COUNT(DISTINCT Order_ID) AS Order_Volume
+FROM online_sales
+WHERE YEAR(Order_Date) = 2016
+GROUP BY YEAR(Order_Date), MONTH(Order_Date)
+ORDER BY Year, Month;
+
+--Yearly Revenue and Order Volume Trend
+SELECT
+    YEAR(Order_Date) AS Year,
+    ROUND(SUM(Sales),2) AS Total_Revenue,
+    COUNT(DISTINCT Order_ID) AS Order_Volume
+FROM online_sales
+GROUP BY YEAR(Order_Date)
+ORDER BY Year;
